@@ -26,8 +26,8 @@ pipeline {
             steps {
                 sh '''
                     echo testing'
-                    python3 ./tests/unit_test.py'
-                    python3 ./tests/docker_image_test.py'
+                    pytest ./tests/unit_test.py'
+                    pytest ./tests/docker_image_test.py'
                 '''
             }
 	        post {
