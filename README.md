@@ -1,9 +1,23 @@
 # Jenkins Pipeline with Docker Compose
 
 This project involves setting up a Jenkins pipeline to automate the build, testing, and deployment process of a Python Flask weather application.
-The pipeline utilizes Docker Compose for creating a child environment, runs unit tests, pushes the built image to a Docker repository, and deploys both the application and nginx to a remote virtual machine using a Docker daemon ([Configure remote access for Docker daemon](https://docs.docker.com/config/daemon/remote-access/)).
+The pipeline utilizes Docker Compose for creating a child environment, runs unit tests, pushes the built image to a Docker repository, and deploys both the application and nginx to a remote virtual machine using a Docker daemon.
 Additionally, the pipeline integrates with Slack to send notifications about the pipeline status.
 ![Image](GitHub-Docker.png "Architecture of the project")
+
+
+## Acknowledgements
+
+ - [GitHub + Jenkins](https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project)
+
+ - [Using Jenkins agents](https://www.jenkins.io/doc/book/using/using-agents/)
+
+ - [Connecting to a Remote Docker Daemon](https://docs.docker.com/config/daemon/remote-access/)
+
+ - [How to deploy Flask + Gunicorn + Nginx + Docker](https://towardsdatascience.com/how-to-deploy-ml-models-using-flask-gunicorn-nginx-docker-9b32055b3d0)
+
+ - [Slack Notification](https://plugins.jenkins.io/slack/)
+ 
 
 ## Badges
 
