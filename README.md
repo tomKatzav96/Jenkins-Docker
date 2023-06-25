@@ -1,4 +1,4 @@
-Jenkins Pipeline for Python Flask Weather Application with Docker Compose
+Jenkins Pipeline with Docker Compose
 ======
 Project Overview:
 ------
