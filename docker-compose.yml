@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  flask_app:
+    restart: always
+    container_name: flask_app
+    image: tomkatzav/weather:v-${TAG}
+    build: ./app
+  nginx:
+    container_name: nginx
+    restart: always
+    image: tomkatzav/weather:nginx
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - flask_app
+

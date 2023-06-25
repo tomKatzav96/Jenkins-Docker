@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON History</title>
+  </head>
+    <body style="background-color:{{ background }}">
+      </form>
+        <form action="/" method="GET">
+        <button type="submit">Home</button>
+    </form>
+    <h1>JSON History</h1>
+    <table>
+      <tr>
+        <th>Filename</th>
+        <th>Download</th>
+      </tr>
+      {% for filename in filenames %}
+      <tr>
+        <td>{{ filename }}</td>
+        <td><a href="/download/{{ filename }}">Download</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
+
