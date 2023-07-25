@@ -1,10 +1,12 @@
 # Jenkins Pipeline with Docker Compose
 
-This project involves setting up a Jenkins pipeline to automate the build, testing, and deployment process of a Python Flask weather application.
-The pipeline utilizes Docker Compose for creating a child environment, runs unit tests, pushes the built image to a Docker repository, and deploys both the application and nginx to a remote virtual machine using a Docker daemon.
-Additionally, the pipeline integrates with Slack to send notifications about the pipeline status.
+Jenkins pipeline using Docker Compose, Nginx, Pytest, Docker Hub, and Slack for a basic weather application written in Python, forked from [tomKatzav96/python-weather-app](https://github.com/tomKatzav96/python-weather-app).
+
 ![Image](GitHub-Docker.png "Architecture of the project")
 
+## about this project
+
+This project involves setting up a Jenkins pipeline to automate the build, testing, and deployment process of a Python Flask weather application. The pipeline utilizes Docker Compose for creating a child environment, runs unit tests, pushes the built image to a Docker repository, and deploys both the application and nginx to a remote virtual machine using a Docker daemon. Additionally, the pipeline integrates with Slack to send notifications about the pipeline status. 
 
 ## Acknowledgements
 
@@ -36,13 +38,3 @@ Additionally, the pipeline integrates with Slack to send notifications about the
 ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-
-## Roadmap
-
-- **Sending logs when the pipeline fails:** Implement a mechanism to capture and send logs automatically when the pipeline fails. This will help in identifying and troubleshooting issues more efficiently.
-
-- **Adding a certificate to nginx:** Secure the communication between the server and clients by installing an SSL certificate on the Nginx server. This will ensure encrypted data transfer and enhance the overall security of the system.
-
-- **Creation of a dynamic agent in Jenkins:** Set up a dynamic agent configuration in Jenkins to improve scalability and resource allocation. This will allow Jenkins to dynamically provision and manage additional agents based on workload demands.
-
-- **Using Blue Ocean for Jenkins visualization:** Integrate Blue Ocean, a plugin for Jenkins, to enhance the visual representation of the CI/CD pipeline. This modern and user-friendly interface provides a more intuitive way to monitor and navigate through Jenkins jobs, facilitating better visibility and understanding of the overall pipeline status.
